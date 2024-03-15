@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMaster - Cadastro de Informações</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f2f2f2; /* Cinza claro */
+        }
+
+        .cadastro-container {
+            margin-top: 100px;
+        }
+
+        .cadastro-card {
+            max-width: 400px;
+            margin: auto;
+            background-color: #ffffff; /* Branco */
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .cadastro-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .cadastro-header h4 {
+            color: #6c5ce7; /* Roxo */
+        }
+
+        .form-control:focus {
+            border-color: #6c5ce7; /* Roxo */
+            box-shadow: 0 0 0 0.2rem rgba(108, 92, 231, 0.25);
+        }
+
+        .btn-primary {
+            background-color: #6c5ce7; /* Roxo */
+            border-color: #6c5ce7; /* Roxo */
+        }
+
+        .btn-primary:hover {
+            background-color: #5f4bd1; /* Roxo mais escuro */
+            border-color: #5f4bd1; /* Roxo mais escuro */
+        }
+    </style>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">HRMaster</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Configurações</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sair</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row cadastro-container">
+            <div class="col-md-6 offset-md-3">
+                <div class="card cadastro-card">
+                    <div class="card-body">
+                        <div class="cadastro-header">
+                            <h4>HRMaster - Cadastro de Informações</h4>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                            </div>
+                            <div class="form-group">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
